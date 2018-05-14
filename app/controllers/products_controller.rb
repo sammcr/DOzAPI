@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
 
-    render json: @products
+    pagination json: @products
   end
 
   # GET /categories/1

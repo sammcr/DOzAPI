@@ -15,6 +15,8 @@ class CategoriesController < ApplicationController
 
   # POST /categories
   def create
+    p "=============================="
+    p params
     @category = Category.new(category_params)
 
     if @category.save

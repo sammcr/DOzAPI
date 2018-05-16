@@ -1,6 +1,7 @@
 require "bunny"
 class Product < ApplicationRecord
   belongs_to :category
+  has_many :entries
   after_create :send_rabbit
 
   private

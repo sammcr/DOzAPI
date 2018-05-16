@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subtotal: 1
+  total: 1
+  shipping: MyString
+  address: MyString
+  notes: MyString
+
+two:
+  subtotal: 1
+  total: 1
+  shipping: MyString
+  address: MyString
+  notes: MyString

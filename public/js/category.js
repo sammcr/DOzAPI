@@ -1,8 +1,11 @@
 $(document).ready(function(){
+  var localStorage = window.localStorage;
 	var url_string = window.location.href;
 	var url = new URL(url_string);
 	var category = url.searchParams.get("c");
 	var last_loaded_page = 1;
+
+	setCartItems();
 
 	if (url.pathname.indexOf("category") >= 0){
 		setCategory();
@@ -80,6 +83,11 @@ $(document).ready(function(){
 		last_loaded_page += 1;
 		loadProducts(last_loaded_page);
 	});
+
+	function setCartItems() {
+	  var entries = JSON.parse(localStorage.getItem('entries'));
+    $('#cart-items').text(entries.length);
+  }
 
 });
 

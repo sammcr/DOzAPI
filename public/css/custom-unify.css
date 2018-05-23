@@ -1,0 +1,45 @@
+/* Add here all your css styles (customizations) */
+
+/* Buttons */
+.u-btn-primary {
+	background-color: #1ea8ce !important;
+}
+
+/* Borders */
+.g-brd-primary {
+	border-color: #1ea8ce !important;
+}
+
+.g-brd-primary--active.active, .active .g-brd-primary--active {
+	border-color: #1ea8ce !important;
+}
+
+/* Text color */
+.g-color-primary--hover:hover {
+	color: #1ea8ce !important;
+}
+
+.g-color-primary {
+	color: #1ea8ce !important;
+}
+
+/* Backgrounds */
+
+.g-bg-primary {
+	background-color: #1ea8ce !important;
+}
+
+.g-bg-primary--active.active, .active .g-bg-primary--active {
+	background-color: #1ea8ce !important;
+}
+
+
+/* Checkbox */
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v4 {
+	color: #1ea8ce !important;
+	border-color: #1ea8ce !important;
+}
+
+.u-go-to-v2:hover, .u-go-to-v2:focus:hover {
+	background-color: #1ea8ce !important;
+}

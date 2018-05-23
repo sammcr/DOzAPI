@@ -1,0 +1,172 @@
+/*-----------------------------------
+               Backgrounds
+-----------------------------------*/
+.bg-black-transp {
+	background-color: rgba(1,1,1, 0.1) !important;
+}
+
+.bg-black {
+	background-color: #141616;
+}
+
+.bg-transparent {
+	background-color: transparent !important;
+}
+
+/*-----------------------------------
+               Filters
+-----------------------------------*/
+.f-brightness-60 {
+	filter: brightness(60%) !important;
+}
+
+/*-----------------------------------
+               Flex
+-----------------------------------*/
+
+.flex-container {
+	display: flex !important;
+	align-items: center;
+}
+
+/*-----------------------------------
+               Fonts
+-----------------------------------*/
+
+/* Family */
+.ff-roboto {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+/* Size */
+
+.fs-08-rem {
+	font-size: .8rem !important;
+}
+
+.fs-09-rem {
+	font-size: .9rem !important;
+}
+
+/*-----------------------------------
+               Heights
+-----------------------------------*/
+.h-90x {
+	height: 90px !important;
+}
+
+.h-5x {
+	height: 5px !important;
+}
+
+.h-600 {
+	height: 600px !important;
+}
+
+/*-----------------------------------
+              Widths
+-----------------------------------*/
+.w-1168x {
+	width: 1168px !important;
+}
+
+/*-----------------------------------
+             Line heights
+-----------------------------------*/
+.lh-5x {
+	line-height: 5px !important;
+}
+
+/*-----------------------------------
+               Positioning
+-----------------------------------*/
+
+.bottom-50x {
+	bottom: 50px;
+}
+
+.top-50 {
+	top: 50%;
+}
+
+.top-0 {
+	top: 0;
+}
+
+.left-0 {
+	left: 0;
+}
+
+/*-----------------------------------
+               Position
+-----------------------------------*/
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+/*-----------------------------------
+               Transform
+-----------------------------------*/
+.translate-y-minus-50{
+	transform: translateY(-50%);
+}
+
+/*-----------------------------------
+               z-index
+-----------------------------------*/
+
+.z-index-9999 {
+	z-index: 9999;
+}
+
+.z-index-10 {
+	z-index: 10;
+}
+
+/*-----------------------------------
+               Line height
+-----------------------------------*/
+
+.line-height-30 {
+	line-height: 30px !important
+}
+
+/*-----------------------------------
+               Margins
+-----------------------------------*/
+
+.m-b-0 {
+	margin-bottom: 0 !important;
+}
+
+/*-----------------------------------
+               Max Height
+-----------------------------------*/
+
+.max-height-600 {
+	max-height: 600px;
+}
+
+.max-height-500 {
+	max-height: 500px;
+}
+
+/*-----------------------------------
+               Max Width
+-----------------------------------*/
+
+.max-width-1400 {
+	max-width: 1400px;
+}
+
+/*-----------------------------------
+              Text decoration
+-----------------------------------*/
+.underlined {
+	text-decoration: underline;
+}

@@ -161,7 +161,6 @@ $(document).ready(function(){
   }
 
   function setCartItems() {
-    console.log(localStorage.getItem('entries'));
     if(localStorage.getItem('entries') != null)
       var entries = JSON.parse(localStorage.getItem('entries'));
 

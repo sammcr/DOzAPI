@@ -3,8 +3,8 @@ class ProductsController < ApplicationController
 
   # GET /categories
   def index
-    @products = Product.all.paginate(page: params[:page], per_page: 12)
-    @products = Product.where('category_id = ?', category).paginate(page: params[:page], per_page: 12).order("created_at DESC") if category
+    @products = Product.all.paginate(page: params[:page], per_page: get_pagination)
+    @products = Product.where('category_id = ?', category).paginate(page: params[:page], per_page: get_pagination).order("created_at DESC") if category
     set_custom_headers @products
     render json: @products
   end
@@ -59,6 +59,14 @@ class ProductsController < ApplicationController
     response.set_header('X-TotalPages', products.total_pages)
     response.set_header('X-NumberProducts', products.total_entries)
     response.set_header('Access-Control-Expose-Headers', 'X-CurrentPage, X-TotalPages, X-NumberProducts')
+  end
+
+  def get_pagination
+    if params[:per_page]
+      params[:per_page].to_i > 500 ? @per_page = 500 : @per_page = params[:per_page]
+    else
+      @per_page = 12
+    end
   end
 
 end

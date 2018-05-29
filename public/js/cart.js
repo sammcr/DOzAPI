@@ -72,7 +72,7 @@ function updateTotal(entries){
   var row;
   var i = 0;
   $('#prods tr').each(function() {
-    row[i++]=$(this).children('.js-result').val();
+    row[i++] = $(this).children('.js-result').val();
     alert(row[i]);
   });
 }

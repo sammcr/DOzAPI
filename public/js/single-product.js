@@ -184,6 +184,6 @@ window.onload = function(event) {
   }
   else {
     event.stopPropagation(true);
-    window.location.href="index.html";
+    window.location.href="/";
   }
 };

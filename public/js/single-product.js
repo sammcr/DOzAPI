@@ -25,6 +25,7 @@ $(document).ready(function(){
 
 				// Sets product price
 				$("#product-price").html("&euro;" + result.price);
+				$("#product-price").attr("data-price", result.price);
         $("ul#size-list").attr("data-product", result.category.name);
 				// Sets product sizes
 				setSizes(result);
@@ -123,6 +124,7 @@ $(document).ready(function(){
 	  var qty = parseInt($('.js-quantity input').val());
 	  var name_elem = $('#product-name').text();
     var element_entrie = getElement(entries, size);
+    var price_prod = $("#product-price").attr('data-price');
 
     if(element_entrie.length > 0){
       entries[element_entrie[0]].quantity += qty;
@@ -133,7 +135,8 @@ $(document).ready(function(){
 	    product_id: product,
       name: name_elem,
       quantity: qty,
-      selectedSize: size
+      selectedSize: size,
+      price : price_prod
     };
 
     return entry;

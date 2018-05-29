@@ -85,11 +85,16 @@ $(document).ready(function(){
 	});
 
 	function setCartItems() {
+<<<<<<< Updated upstream
     if(localStorage.getItem('entries') != null)
       var entries = JSON.parse(localStorage.getItem('entries'));
 
     if(entries)
       $('#cart-items').text(entries.length);
+=======
+	  var entries = JSON.parse(localStorage.getItem('entries'));
+    $('#cart-items').text(entries);
+>>>>>>> Stashed changes
   }
 
 });

@@ -24,7 +24,7 @@ $(document).ready(function(){
           <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>`);
         var price;
 				if(result.discount > 0){
-          price = result.price - (result.price*(result.discount/100));
+          price = (result.price - (result.price*(result.discount/100))).toFixed(2);
           // Sets product price
           $("#product-price").html(`&euro; ${price} <span class="g-color-gray-light-v1 g-text-strike g-font-weight-300 ml-2">&euro; ${result.price}</span>`);
         }

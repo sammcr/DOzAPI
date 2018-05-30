@@ -38,7 +38,7 @@ $(document).ready(function(){
 				var price, oldPriceSpan, margin_left;
 				for(var i = 0; i < result.length; i++){
           if(result[i].discount > 0){
-            price = result[i].price - (result[i].price*(result[i].discount/100));
+            price = (result[i].price - (result[i].price*(result[i].discount/100))).toFixed(2);
             oldPriceSpan = `<span class="g-color-gray-light-v1 g-text-strike ml-2">&euro; ${result[i].price}</span>`;
           }
           else {

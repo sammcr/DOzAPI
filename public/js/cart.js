@@ -1,8 +1,10 @@
-$(document).ready(function(){
-  var localStorage = window.localStorage;
-  var entries = JSON.parse(localStorage.getItem('entries'));
+var localStorage = window.localStorage;
+var entries = JSON.parse(localStorage.getItem('entries'));
 
-  loadProducts(entries);
+$(document).ready(function(){
+
+  loadProducts();
+  setCartItems();
 
 })
 
@@ -10,6 +12,9 @@ $('body').on('click', 'i.js-plus', function(){
   var input = parseInt($(this).parents('td:first').children('div:first').children("input:first").val());
   input += 1;
   $(this).parents('td:first').children('div:first').children("input:first").val(input);
+  // Pendiente de cambiar quantity en localStorage
+  // var name = $(this).parent('td:first').parent('tr:first').children('td:first').children('div:first').children('h4').text();
+  // console.log(name);
   updateTotal();
 });
 
@@ -22,7 +27,73 @@ $('body').on('click', 'i.js-minus', function(){
   updateTotal();
 });
 
-function loadProducts(entries){
+$('body').on('click', '#make-order', function(){
+  var subtotal = parseFloat($('#subtotal').text().substr(2));
+  var total = parseFloat($('#total').text().substr(2));
+  var notes = $('#inputGroup7').val();
+  var nombre = $('#inputGroup4').val();
+  var apellido = $('#inputGroup5').val();
+  var email = $('#inputGroup6').val();
+  var state = $('#inputGroup8').val();
+  var zip = $('#inputGroup9').val();
+  var adress = $('#inputGroup10').val();
+  var telefono = $('#inputGroup11').val();
+  var shopping_cart = {
+    subtotal: subtotal,
+    total: total,
+    notes: notes,
+    shipping_address: {
+      nombre: nombre,
+      apellido: apellido,
+      email: email,
+      state: state,
+      zip: zip,
+      adress: adress,
+      telefono: telefono
+    }
+  };
+
+  shopping_cart = {shopping_cart: shopping_cart};
+
+  $.ajax({
+    url: "/shopping_carts",
+    type: "POST",
+    data: shopping_cart,
+    success: function(result, status, xhr) {
+      for (var i = 0; i < entries.length; i++) {
+
+        var totalEntry = entries[i].price * entries[i].quantity;
+
+        var entry = {
+          product_id: entries[i].product_id,
+          quantity: entries[i].quantity,
+          total: totalEntry,
+          selectedSize: entries[i].selectedSize
+        }
+
+        entry = {entry: entry};
+
+        $.ajax({
+
+          url: "/shopping_carts/" + result.id + "/entries",
+          type: "POST",
+          data: entry
+        });
+      }
+      window.location.href = "/";
+    }
+  });
+});
+
+function setCartItems() {
+  if(localStorage.getItem('entries') != null)
+    var entries = JSON.parse(localStorage.getItem('entries'));
+
+  if(entries)
+    $('#cart-items').text(entries.length);
+}
+
+function loadProducts(){
 
   for (var i = 0; i < entries.length; i++) {
 
@@ -62,10 +133,12 @@ function loadProducts(entries){
             </td>
           </tr>
         `);
+      },
+      complete: function(){
+        updateTotal();
       }
     });
   }
-  updateTotal();
 }
 
 function updateTotal(){
@@ -76,7 +149,6 @@ function updateTotal(){
 
   $('#prods tr').each(function() {
     if (i++ != 0) {
-      console.log("Hayvamos");
       price = parseFloat($(this).children('#price').text().substr(2));
       qty = parseInt($(this).children("#qty").children("#div-input").children("#input").val());
       total += price*qty;
@@ -85,6 +157,6 @@ function updateTotal(){
   });
 
   $('.subtotal').text("$ "+total+".0");
-  $('.total').text("$ "+total+".0");
+  $('.total').text("$ "+(Math.round(total*1.16 * 100) / 100));
 
 }

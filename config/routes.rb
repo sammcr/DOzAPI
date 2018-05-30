@@ -4,4 +4,8 @@ Rails.application.routes.draw do
     resources :products, shallow: true
   end
 
+  resources :shopping_carts do
+    resources :entries, shallow: true
+  end
+
 end

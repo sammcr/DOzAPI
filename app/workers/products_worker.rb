@@ -10,8 +10,9 @@ class ProductsWorker
   # which we can pass to RecentPosts service without
   # changes
   def work(raw_product)
-    discount = JSON.parse(raw_product) # also set some messages on console?
+    discount = JSON.parse(raw_product)
     Product.find_by(id: discount['product']).update(discount: discount['discount'])
+    DiscountBroadcastJob.perform_later(Product.find_by(id: discount['product']))
     ack! # we need to let queue know that message was received
   end
 end

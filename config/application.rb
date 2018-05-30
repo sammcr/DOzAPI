@@ -30,6 +30,8 @@ module DOzAPI
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
+    config.action_cable.mount_path = '/cable'
+
     # Allows requests from any origin on any resource.
     config.middleware.insert_before 0, Rack::Cors do
       allow do

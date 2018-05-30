@@ -4,6 +4,8 @@ class Product < ApplicationRecord
   has_many :entries
   after_create :send_rabbit
 
+  after_update_commit { DiscountBroadcastJob.perform_later(self) }
+
   private
 
   def send_rabbit

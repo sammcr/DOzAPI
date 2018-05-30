@@ -13,6 +13,10 @@
 	background-color: transparent !important;
 }
 
+.bg-white-transparent {
+	background-color: #ffffffe6 !important;
+}
+
 /*-----------------------------------
                Filters
 -----------------------------------*/
@@ -134,6 +138,14 @@
 
 .line-height-30 {
 	line-height: 30px !important
+}
+
+.line-height-24 {
+	line-height: 24px !important;
+}
+
+.line-height-12 {
+	line-height: 12px !important;
 }
 
 /*-----------------------------------

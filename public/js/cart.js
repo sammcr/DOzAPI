@@ -11,7 +11,6 @@ $('body').on('click', 'i.js-plus', function(){
   input += 1;
   $(this).parents('td:first').children('div:first').children("input:first").val(input);
   updateTotal();
-
 });
 
 $('body').on('click', 'i.js-minus', function(){
@@ -44,10 +43,10 @@ function loadProducts(entries){
                 </ul>
               </div>
             </td>
-            <td class="g-color-gray-dark-v2 g-font-size-13">$ ${result.price}</td>
-            <td>
-              <div class="js-quantity input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
-                <input id="input${result.name}" class="js-result form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="1" readonly>
+            <td id="price" class="g-color-gray-dark-v2 g-font-size-13">$ ${result.price}</td>
+            <td id="qty">
+              <div id="div-input" class="js-quantity input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
+                <input id="input" class="js-result form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="1" readonly>
 
                 <div class="input-group-addon d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white g-font-size-12 rounded-0 g-px-5 g-py-6">
                   <i class="js-plus g-color-gray g-color-primary--hover fa fa-angle-up"></i>
@@ -55,8 +54,8 @@ function loadProducts(entries){
                 </div>
               </div>
             </td>
-            <td class="text-right g-color-black">
-              <span id="span${result.name}" class="g-color-gray-dark-v2 g-font-size-13 mr-4">$ ${result.price}</span>
+            <td id="last-column" class="text-right g-color-black">
+              <span id="span" class="g-color-gray-dark-v2 g-font-size-13 mr-4">$ ${result.price}</span>
               <span class="g-color-gray-dark-v4 g-color-black--hover g-cursor-pointer">
                 <i class="mt-auto fa fa-trash"></i>
               </span>
@@ -66,13 +65,26 @@ function loadProducts(entries){
       }
     });
   }
+  updateTotal();
 }
 
-function updateTotal(entries){
-  var row;
+function updateTotal(){
+  var qty;
+  var price;
   var i = 0;
+  var total = 0;
+
   $('#prods tr').each(function() {
-    row[i++] = $(this).children('.js-result').val();
-    alert(row[i]);
+    if (i++ != 0) {
+      console.log("Hayvamos");
+      price = parseFloat($(this).children('#price').text().substr(2));
+      qty = parseInt($(this).children("#qty").children("#div-input").children("#input").val());
+      total += price*qty;
+      $(this).children("#last-column").children("#span").text("$ " + price*qty + ".0")
+    }
   });
+
+  $('.subtotal').text("$ "+total+".0");
+  $('.total').text("$ "+total+".0");
+
 }

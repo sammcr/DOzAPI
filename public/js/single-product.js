@@ -22,9 +22,16 @@ $(document).ready(function(){
 				$('#breadcrumbs-category').html(`<a class="u-link-v5 g-color-text" href="category?c=${result.category_id}">
 					${result.category.name}</a>
           <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>`);
-
-				// Sets product price
-				$("#product-price").html("&euro;" + result.price);
+        var price;
+				if(result.discount > 0){
+          price = result.price - (result.price*(result.discount/100));
+          // Sets product price
+          $("#product-price").html(`&euro; ${price} <span class="g-color-gray-light-v1 g-text-strike g-font-weight-300 ml-2">&euro; ${result.price}</span>`);
+        }
+        else {
+					price = result.price;
+          $("#product-price").html("&euro;" + price);
+				}
         $("ul#size-list").attr("data-product", result.category.name);
 				// Sets product sizes
 				setSizes(result);

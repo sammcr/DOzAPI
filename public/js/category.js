@@ -35,8 +35,16 @@ $(document).ready(function(){
 			success: function(result, status, xhr){
 				var pages = parseInt(xhr.getResponseHeader('X-TotalPages'));
 				var current_page = parseInt(xhr.getResponseHeader('X-CurrentPage'));
-
+				var price, oldPriceSpan, margin_left;
 				for(var i = 0; i < result.length; i++){
+          if(result[i].discount > 0){
+            price = result[i].price - (result[i].price*(result[i].discount/100));
+            oldPriceSpan = `<span class="g-color-gray-light-v1 g-text-strike ml-2">&euro; ${result[i].price}</span>`;
+          }
+          else {
+            price = result[i].price;
+            oldPriceSpan = "";
+          }
 					$("#products").append(`
 							<div class="col-6 col-lg-4 g-mb-30">
 			          <!-- Product -->
@@ -46,13 +54,13 @@ $(document).ready(function(){
 
 			          <div class="media">
 			            <!-- Product Info -->
-			            <div class="d-flex flex-column">
+			            <div class="d-flex flex-column text-left">
 			              <h4 class="h6 g-color-black mb-1">
 			                <a class="u-link-v5 g-color-black g-color-primary--hover text-capitalize" href="product?p=${result[i].id}">
 			                  ${result[i].name}
 			                </a>
 			              </h4>
-			              <span class="d-block g-color-black g-font-size-17 text-left">&euro;${result[i].price}</span>
+			              <p class="product-price"><span class="g-color-black g-font-size-17 text-left">&euro;${price}</span> ${oldPriceSpan}</p>
 			            </div>
 			            <!-- End Product Info -->
 			          </div>

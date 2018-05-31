@@ -24,8 +24,17 @@ $(document).ready(function(){
 					${result.category.name}</a>
           <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>`);
 				// Sets product price
-				$("#product-price").html("&euro;" + result.price);
-				$("#product-price").attr("data-price", result.price);
+        var price;
+        if(result.discount > 0){
+          price = (result.price - (result.price*(result.discount/100))).toFixed(2);
+          // Sets product price
+          $("#product-price").html(`&euro; ${price} <span class="g-color-gray-light-v1 g-text-strike g-font-weight-300 ml-2">&euro; ${result.price}</span>`);
+        }
+        else {
+          price = result.price;
+          $("#product-price").html("&euro;" + price);
+        }
+				$("#product-price").attr("data-price", price);
         $("ul#size-list").attr("data-product", result.category.name);
 				// Sets product sizes
 				setSizes(result);
@@ -106,7 +115,6 @@ $(document).ready(function(){
 		var entry = createEntry(entries);
 	  // Pushes new entry to entries
     if(createEntry(entries) != undefined) {
-    	console.log("si");
       entries.push(entry);
     }
 
@@ -116,7 +124,7 @@ $(document).ready(function(){
     // Sets entries to localStorage updated
 
 	  localStorage.setItem('entries', JSON.stringify(entries));
-    console.log(localStorage.getItem('entries'));
+
     $('.discount-notification').remove();
     $('body').prepend(`
               <a class="discount-notification" href="/cart" style="text-decoration: none">

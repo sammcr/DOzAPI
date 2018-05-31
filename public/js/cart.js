@@ -1,12 +1,9 @@
 var localStorage = window.localStorage;
 var e = JSON.parse(localStorage.getItem('entries'));
 $(document).ready(function(){
-
-  console.log(e);
   loadProducts(e);
   setCartItems();
-
-})
+});
 
 $('body').on('click', 'i.js-plus', function(){
   var qty = parseInt($(this).parents('td:first').children('div:first').children("input:first").val());
@@ -16,8 +13,8 @@ $('body').on('click', 'i.js-plus', function(){
   $(this).parents('td:first').children('div:first').children("input:first").val(qty);
 
   updateQuantity(e, name, qty);
-
   updateTotal();
+
 });
 
 $('body').on('click', 'i.js-minus', function(){
@@ -30,8 +27,8 @@ $('body').on('click', 'i.js-minus', function(){
   $(this).parents('td:first').children('div:first').children("input:first").val(qty);
 
   updateQuantity(e, name, qty);
-
   updateTotal();
+
 });
 
 $('body').on('click', 'i.trash', function(){
@@ -39,7 +36,7 @@ $('body').on('click', 'i.trash', function(){
   $(this).parents('td:first').parents('tr:first').remove();
 
   var name = $(this).parents('tr:first').children('td:first').children('div:first').children('h4').text();
-  deleteItemEntries(getIndexToRemove(entries, name));
+  deleteItemEntries(getIndexToRemove(e, name));
 
   updateNumberCart();
 
@@ -118,15 +115,15 @@ $('body').on('click', '#make-order', function(){
 
 function deleteItemEntries(indexItem){
   var items = 0;
-  entries.forEach(function(item, index){
+  e.forEach(function(item, index){
     items++;
   });
 
-  entries.splice(indexItem, 1);
-  localStorage.setItem('entries', JSON.stringify(entries));
-
-  if (items == 1)
+  e.splice(indexItem, 1);
+  localStorage.setItem('entries', JSON.stringify(e));
+  if (items == 1) {
     localStorage.clear();
+  }
 
 }
 
@@ -157,10 +154,10 @@ function getIndexToRemove(data, name) {
 
 function setCartItems() {
   if(localStorage.getItem('entries') != null)
-    var entries = JSON.parse(localStorage.getItem('entries'));
+    var e = JSON.parse(localStorage.getItem('entries'));
 
-  if(entries)
-    $('#cart-items').text(entries.length);
+  if(e)
+    $('#cart-items').text(e.length);
 }
 
 function loadProducts(entries){
@@ -194,8 +191,8 @@ function lp(e, qty){
                   </ul>
                 </div>
               </td>
-              <td id="price" class="g-color-gray-dark-v2 g-font-size-13">&euro; ${result.price}</td>
-              <td id="qty">
+              <td class="g-color-gray-dark-v2 g-font-size-13 price">&euro; ${e.price}</td>
+              <td class="qty">
                 <div id="div-input" class="js-quantity input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
                   <input id="input" class="js-result form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="${qty}" readonly>
 
@@ -216,7 +213,6 @@ function lp(e, qty){
     },
     complete: function(){
       updateTotal();
-
     }
   });
 }
@@ -232,7 +228,7 @@ function fillQuantity(){
       qty = $(this).children("#qty").children("#div-input").children("#input");
       name = $(this).children('td:first').children('div:first').children('h4').text();
 
-      entries.forEach(function(item, index){
+      e.forEach(function(item, index){
         if(item.name ==  name)
           qty.val(item.quantity);
       });
@@ -250,14 +246,15 @@ function updateTotal(){
 
   $('#prods tr').each(function() {
     if (i++ != 0) {
-      price = parseFloat($(this).children('#price').text().substr(2));
-      qty = parseInt($(this).children("#qty").children("#div-input").children("#input").val());
+      price = parseFloat($(this).children('.price').text().substr(2));
+      console.log(price);
+      qty = parseInt($(this).children(".qty").children("#div-input").children("#input").val());
       total += price*qty;
-      $(this).children("#last-column").children("#span").html("&euro; " + price*qty + ".0")
+      $(this).children("#last-column").children("#span").html("&euro; " + price*qty);
     }
   });
 
-  $('.subtotal').html("&euro; "+total+".0");
+  $('.subtotal').html("&euro; "+total);
   $('.total').html("&euro; "+(Math.round(total*1.16 * 100) / 100));
 
 }

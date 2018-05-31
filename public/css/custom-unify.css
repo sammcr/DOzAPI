@@ -25,7 +25,7 @@
 
 /* Backgrounds */
 
-.g-bg-primary {
+.g-bg-primary, .g-bg-primary--active.active, .active .g-bg-primary--active, .g-checked .g-bg-primary--checked {
 	background-color: #1ea8ce !important;
 }
 

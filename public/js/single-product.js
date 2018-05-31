@@ -3,11 +3,12 @@ $(document).ready(function(){
 	var url_string = window.location.href;
 	var url = new URL(url_string);
 	var product = url.searchParams.get("p");
+	var productObject;
   // localStorage.clear();
 	setCartItems();
 
 	if (url.pathname.indexOf("product") >= 0){
-		setProduct();
+		setProduct(productObject);
 		initQtySelector();
 		initSizeSelection();
 	}
@@ -31,6 +32,8 @@ $(document).ready(function(){
 
 				// Sets product image
 				$("#product-image").attr('src',result.url);
+
+				productObject = result;
 			}
 		});
 	}
@@ -100,10 +103,12 @@ $(document).ready(function(){
 	$('#add-to-cart').click(function(){
 
 	  var entries = getOrCreateEntries();
-
+		var entry = createEntry(entries);
 	  // Pushes new entry to entries
-    if(createEntry(entries) != undefined)
-	   entries.push(createEntry(entries));
+    if(createEntry(entries) != undefined) {
+    	console.log("si");
+      entries.push(entry);
+    }
 
 	  // Updates icon
     $('#cart-items').text(entries.length);
@@ -112,6 +117,32 @@ $(document).ready(function(){
 
 	  localStorage.setItem('entries', JSON.stringify(entries));
     console.log(localStorage.getItem('entries'));
+    $('.discount-notification').remove();
+    $('body').prepend(`
+              <a class="discount-notification" href="/cart" style="text-decoration: none">
+                <div class="bg-white-transparent alert fade show u-shadow-v1-3 g-pa-20 g-pos-fix g-top-100 g-right-30 g-width-380 g-z-index-9999" role="alert">
+                  <button type="button" class="close u-alert-close--light g-ml-10 g-mt-1" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+    
+                  <div class="media">
+                    <div class="d-flex g-mr-10">
+                      <img class="g-width-45 g-height-45" src="${productObject.url}" alt="">
+                    </div>
+                    <div class="media-body">
+                      <div class="d-flex justify-content-between">
+                        <p class="m-0 g-font-size-12 line-height-14">An item has been added to your cart:
+                        </p>
+                        
+                      </div>
+                      <p class="m-0 g-font-size-15 line-height-12"><strong>- ${productObject.name.toUpperCase()}</strong></p>
+                      <a href="/cart">view cart</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            `);
+
   });
 
 	function createEntry(entries){

@@ -2,211 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f070d20-7d04-4bbd-8f81-5ee1313ec869" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/entries_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/shopping_carts_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/cart.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/cart.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/.bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/chosen-sprite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/chosen-sprite@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/chosen.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/chosen/chosen.jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/icon-line/css/simple-line-icons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/icon-line/fonts/Simple-Line-Icons.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/icon-line/fonts/Simple-Line-Icons.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/icon-line/fonts/Simple-Line-Icons.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/icon-line/fonts/Simple-Line-Icons.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/icon-line/fonts/Simple-Line-Icons.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/.bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/CHANGELOG" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/deploy.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/example.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/adnan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/brian.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/heart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/android-icon-144x144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/android-icon-192x192.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/android-icon-36x36.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/android-icon-48x48.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/android-icon-72x72.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/android-icon-96x96.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-114x114.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-120x120.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-144x144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-152x152.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-180x180.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-57x57.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-60x60.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-72x72.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-76x76.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon-precomposed.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/apple-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/browserconfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/favicon-16x16.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/favicon-32x32.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/favicon-96x96.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/manifest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/ms-icon-144x144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/ms-icon-150x150.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/ms-icon-310x310.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/icon/ms-icon-70x70.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/logo-heart.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/rena.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/sample-w540@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/social_field_type.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/img/tavis.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/src/Flat.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/src/ImageSelect.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/image-select/src/ImageSelect.jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-migrate/.bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-migrate/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-migrate/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-migrate/jquery-migrate-3.0.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-migrate/jquery-migrate-3.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-migrate/jquery-migrate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/.bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/CONTRIBUTING.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/Gruntfile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/LICENSE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/build/release.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/changelog.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/dist/additional-methods.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/dist/additional-methods.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/dist/jquery.validate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/dist/jquery.validate.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/accept.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/additional.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/alphanumeric.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/bankaccountNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/bankorgiroaccountNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/bic.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/cifES.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/cpfBR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/creditcard.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/creditcardtypes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/currency.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/dateFA.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/dateITA.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/dateNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/extension.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/giroaccountNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/iban.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/integer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/ipv4.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/ipv6.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/lettersonly.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/letterswithbasicpunc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/mobileNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/mobileUK.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/nieES.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/nifES.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/notEqualTo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/nowhitespace.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/pattern.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/phoneNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/phoneUK.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/phoneUS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/phonesUK.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/postalCodeCA.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/postalcodeBR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/postalcodeIT.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/postalcodeNL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/postcodeUK.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/require_from_group.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/skip_or_fill_minimum.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/statesUS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/strippedminlength.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/time.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/time12h.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/url2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/vinUS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/zipcodeUS.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/additional/ziprange.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_az.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_bg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_bn_BD.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ca.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_cs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_da.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_el.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_es.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_es_AR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_es_PE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_et.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_eu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_fa.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_fr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ge.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_gl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_he.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_hr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_hu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_hy_AM.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_id.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_is.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_it.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ja.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ka.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_kk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ko.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_lt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_lv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_mk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_my.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_no.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_pl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_pt_BR.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_pt_PT.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ro.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ru.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_si.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_sk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_sl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_sr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_sr_lat.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_sv.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_th.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_tj.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_tr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_uk.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_ur.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/messages_zh_TW.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/methods_de.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/methods_es_CL.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/methods_fi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/methods_nl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/src/localization/methods_pt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery-validation/validation.jquery.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/jquery/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/vendor/popper.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/controllers/entries_controller_test.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/controllers/shopping_carts_controller_test.rb" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change beforePath="$PROJECT_DIR$/public/cart.html" afterPath="$PROJECT_DIR$/public/cart.html" />
       <change beforePath="$PROJECT_DIR$/public/category.html" afterPath="$PROJECT_DIR$/public/category.html" />
       <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change beforePath="$PROJECT_DIR$/public/js/cart.js" afterPath="$PROJECT_DIR$/public/js/cart.js" />
       <change beforePath="$PROJECT_DIR$/public/js/single-product.js" afterPath="$PROJECT_DIR$/public/js/single-product.js" />
       <change beforePath="$PROJECT_DIR$/public/product.html" afterPath="$PROJECT_DIR$/public/product.html" />
     </list>
@@ -228,8 +27,8 @@
       <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5406">
-              <caret line="318" column="50" lean-forward="false" selection-start-line="318" selection-start-column="50" selection-end-line="318" selection-end-column="50" />
+            <state relative-caret-position="693">
+              <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -238,37 +37,91 @@
       <file leaf-file-name="single-product.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/single-product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1532">
-              <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+            <state relative-caret-position="201">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
-                <marker date="1527776813000" expanded="true" signature="668:701" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="1409:1919" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="1769:1817" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="1883:1902" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="2068:2107" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="2283:2661" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="2355:2646" ph="..." />
-                <marker date="1527776813000" expanded="true" signature="2570:2626" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="701:734" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="1471:1981" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="1831:1879" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="1945:1964" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="2130:2169" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="2345:2723" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="2417:2708" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="2632:2688" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="3858:3879" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="3880:5038" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4040:5019" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4171:4253" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4296:4996" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4345:4465" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4510:4843" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4510:4971" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4577:4766" ph="..." />
+                <marker date="1527784989000" expanded="true" signature="4647:4712" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/category.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+            <state relative-caret-position="320">
+              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank_you.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/thank_you.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.e-commerce.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/styles.e-commerce.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="1454" column="17" lean-forward="false" selection-start-line="1454" selection-start-column="2" selection-end-line="1454" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/cart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="259" column="44" lean-forward="true" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
               <folding>
-                <marker date="1527702838000" expanded="true" signature="1249:1255" ph="€" />
-                <marker date="1527702838000" expanded="true" signature="1464:2317" ph="..." />
-                <marker date="1527702838000" expanded="true" signature="1542:1651" ph="..." />
-                <marker date="1527702838000" expanded="true" signature="1685:2265" ph="..." />
-                <marker date="1527702838000" expanded="true" signature="1780:2204" ph="..." />
-                <marker date="1527702838000" expanded="true" signature="1832:2045" ph="..." />
-                <marker date="1527702838000" expanded="true" signature="1959:2022" ph="..." />
-                <marker date="1527702838000" expanded="false" signature="2142:2148" ph="€" />
+                <marker date="1527785760000" expanded="true" signature="4713:6462" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="4758:5259" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="4919:5239" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="5140:5172" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="5140:5216" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="5334:5340" ph="€" />
+                <marker date="1527785760000" expanded="true" signature="5388:6070" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="5503:6050" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="5809:6027" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="6139:6444" ph="..." />
+                <marker date="1527785760000" expanded="true" signature="6222:6228" ph="€" />
+                <marker date="1527785760000" expanded="true" signature="6340:6424" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/category.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="99" column="80" lean-forward="true" selection-start-line="99" selection-start-column="80" selection-end-line="99" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -277,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/discounts_socket.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+              <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <marker date="1527726029000" expanded="true" signature="617:1168" ph="..." />
                 <marker date="1527726029000" expanded="true" signature="617:1791" ph="..." />
@@ -293,61 +146,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="4507">
+              <caret line="266" column="47" lean-forward="false" selection-start-line="266" selection-start-column="47" selection-end-line="266" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/category.html">
+      <file leaf-file-name="shopping_carts_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/shopping_carts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="169" column="27" lean-forward="false" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="114" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="114" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="discount_channel.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/channels/discount_channel.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connection.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/channels/application_cable/connection.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="765">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -367,8 +180,11 @@
       <find>slider</find>
       <find>animate.css</find>
       <find>color</find>
-      <find>text-decoration</find>
       <find>font-weight</find>
+      <find>text-decoration</find>
+      <find>home-page-1</find>
+      <find>home</find>
+      <find>updateQuantity</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -405,15 +221,18 @@
         <option value="$PROJECT_DIR$/app/jobs/discount_broadcast_job.rb" />
         <option value="$PROJECT_DIR$/app/workers/products_worker.rb" />
         <option value="$PROJECT_DIR$/public/css/globals.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/product.html" />
-        <option value="$PROJECT_DIR$/public/category.html" />
         <option value="$PROJECT_DIR$/public/js/category.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/public/js/discounts_socket.js" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
+        <option value="$PROJECT_DIR$/public/cart.html" />
         <option value="$PROJECT_DIR$/public/js/single-product.js" />
+        <option value="$PROJECT_DIR$/public/category.html" />
+        <option value="$PROJECT_DIR$/public/product.html" />
+        <option value="$PROJECT_DIR$/public/js/cart.js" />
+        <option value="$PROJECT_DIR$/public/thank_you.html" />
+        <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
   </component>
@@ -430,8 +249,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="1280" />
+    <option name="y" value="-240" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -461,12 +282,35 @@
             <path>
               <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOzAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOzAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOzAPI" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOzAPI" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOzAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOzAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOzAPI" type="b2602c69:ProjectViewProjectNode" />
@@ -637,37 +481,57 @@
       <workItem from="1527691563477" duration="7976000" />
       <workItem from="1527711915736" duration="1098000" />
       <workItem from="1527720711960" duration="3922000" />
-      <workItem from="1527776705953" duration="123000" />
+      <workItem from="1527776705953" duration="7323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43519000" />
+    <option name="totallyTimeSpent" value="50719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="1280" y="-240" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21001616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13844515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13844515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -680,20 +544,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/category_controller.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180511163406_create_categories.rb" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/product_controller.rb" />
-    <entry file="file://$PROJECT_DIR$/public/catalog.html" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -852,6 +702,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -884,24 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8432">
-          <caret line="496" column="2" lean-forward="false" selection-start-line="496" selection-start-column="2" selection-end-line="496" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/globals.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.e-commerce.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510986">
-          <caret line="30058" column="18" lean-forward="false" selection-start-line="30058" selection-start-column="1" selection-end-line="30058" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -926,39 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5406">
-          <caret line="318" column="50" lean-forward="false" selection-start-line="318" selection-start-column="50" selection-end-line="318" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding>
-            <marker date="1527702838000" expanded="true" signature="1249:1255" ph="€" />
-            <marker date="1527702838000" expanded="true" signature="1464:2317" ph="..." />
-            <marker date="1527702838000" expanded="true" signature="1542:1651" ph="..." />
-            <marker date="1527702838000" expanded="true" signature="1685:2265" ph="..." />
-            <marker date="1527702838000" expanded="true" signature="1780:2204" ph="..." />
-            <marker date="1527702838000" expanded="true" signature="1832:2045" ph="..." />
-            <marker date="1527702838000" expanded="true" signature="1959:2022" ph="..." />
-            <marker date="1527702838000" expanded="false" signature="2142:2148" ph="€" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/channels/application_cable/connection.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -975,10 +779,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/entries_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <marker date="1527702838000" expanded="true" signature="1249:1255" ph="€" />
+            <marker date="1527702838000" expanded="true" signature="1464:2317" ph="..." />
+            <marker date="1527702838000" expanded="true" signature="1542:1651" ph="..." />
+            <marker date="1527702838000" expanded="true" signature="1685:2265" ph="..." />
+            <marker date="1527702838000" expanded="true" signature="1780:2204" ph="..." />
+            <marker date="1527702838000" expanded="true" signature="1832:2045" ph="..." />
+            <marker date="1527702838000" expanded="true" signature="1959:2022" ph="..." />
+            <marker date="1527702838000" expanded="false" signature="2142:2148" ph="€" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="6" column="114" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/shopping_carts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.e-commerce.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="1454" column="17" lean-forward="false" selection-start-line="1454" selection-start-column="2" selection-end-line="1454" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/discounts_socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="47" />
           <folding>
             <marker date="1527726029000" expanded="true" signature="617:1168" ph="..." />
             <marker date="1527726029000" expanded="true" signature="617:1791" ph="..." />
@@ -993,43 +862,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="114" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="169" column="27" lean-forward="false" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
+        <state relative-caret-position="262">
+          <caret line="99" column="80" lean-forward="true" selection-start-line="99" selection-start-column="80" selection-end-line="99" selection-end-column="80" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4507">
+          <caret line="266" column="47" lean-forward="false" selection-start-line="266" selection-start-column="47" selection-end-line="266" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/thank_you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="259" column="44" lean-forward="true" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
+          <folding>
+            <marker date="1527785760000" expanded="true" signature="4713:6462" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="4758:5259" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="4919:5239" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="5140:5172" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="5140:5216" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="5334:5340" ph="€" />
+            <marker date="1527785760000" expanded="true" signature="5388:6070" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="5503:6050" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="5809:6027" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="6139:6444" ph="..." />
+            <marker date="1527785760000" expanded="true" signature="6222:6228" ph="€" />
+            <marker date="1527785760000" expanded="true" signature="6340:6424" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/single-product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1532">
-          <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+        <state relative-caret-position="201">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
-            <marker date="1527776813000" expanded="true" signature="668:701" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="1409:1919" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="1769:1817" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="1883:1902" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="2068:2107" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="2283:2661" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="2355:2646" ph="..." />
-            <marker date="1527776813000" expanded="true" signature="2570:2626" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="701:734" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="1471:1981" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="1831:1879" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="1945:1964" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="2130:2169" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="2345:2723" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="2417:2708" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="2632:2688" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="3858:3879" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="3880:5038" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4040:5019" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4171:4253" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4296:4996" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4345:4465" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4510:4843" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4510:4971" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4577:4766" ph="..." />
+            <marker date="1527784989000" expanded="true" signature="4647:4712" ph="..." />
           </folding>
         </state>
       </provider>

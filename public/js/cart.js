@@ -1,10 +1,9 @@
 var localStorage = window.localStorage;
-var entries = JSON.parse(localStorage.getItem('entries'));
-
+var e = JSON.parse(localStorage.getItem('entries'));
 $(document).ready(function(){
 
-  console.log(entries);
-  loadProducts();
+  console.log(e);
+  loadProducts(e);
   setCartItems();
 
 })
@@ -16,7 +15,7 @@ $('body').on('click', 'i.js-plus', function(){
   qty += 1;
   $(this).parents('td:first').children('div:first').children("input:first").val(qty);
 
-  updateQuantity(entries, name, qty)
+  updateQuantity(e, name, qty);
 
   updateTotal();
 });
@@ -30,7 +29,7 @@ $('body').on('click', 'i.js-minus', function(){
   }
   $(this).parents('td:first').children('div:first').children("input:first").val(qty);
 
-  updateQuantity(entries, name, qty);
+  updateQuantity(e, name, qty);
 
   updateTotal();
 });
@@ -48,7 +47,7 @@ $('body').on('click', 'i.trash', function(){
 });
 
 $('body').on('click', '#make-order', function(){
-  if (entries) {
+  if (e) {
 
     var subtotal = parseFloat($('#subtotal').text().substr(2));
     var total = parseFloat($('#total').text().substr(2));
@@ -61,49 +60,55 @@ $('body').on('click', '#make-order', function(){
     var adress = $('#inputGroup10').val();
     var telefono = $('#inputGroup11').val();
 
-    var shopping_cart = {
-      subtotal: subtotal,
-      total: total,
-      notes: notes,
-      shipping_address: {
-        nombre: nombre,
-        apellido: apellido,
-        email: email,
-        state: state,
-        zip: zip,
-        adress: adress,
-        telefono: telefono
-      }
+    var shipping_address = {
+      nombre: nombre,
+      apellido: apellido,
+      email: email,
+      state: state,
+      zip: zip,
+      adress: adress,
+      telefono: telefono
     };
 
-    shopping_cart = {shopping_cart: shopping_cart};
+    var shopping_cart = {
+      shopping_cart: {
+        subtotal: subtotal,
+        total: total,
+        notes: notes,
+        shipping_address: JSON.stringify(shipping_address)
+      }
+    };
 
     $.ajax({
       url: "/shopping_carts",
       type: "POST",
       data: shopping_cart,
       success: function(result, status, xhr) {
-        for (var i = 0; i < entries.length; i++) {
-
-          var totalEntry = entries[i].price * entries[i].quantity;
+        for (var i = 0; i < e.length; i++) {
+          var totalEntry = e[i].price * e[i].quantity;
 
           var entry = {
-            product_id: entries[i].product_id,
-            quantity: entries[i].quantity,
-            total: totalEntry,
-            selectedSize: entries[i].selectedSize
-          }
-
-          entry = {entry: entry};
+            entry: {
+              product_id: e[i].product_id,
+              quantity: e[i].quantity,
+              total: totalEntry,
+              selectedSize: e[i].selectedSize
+            }
+          };
 
           $.ajax({
-
             url: "/shopping_carts/" + result.id + "/entries",
             type: "POST",
-            data: entry
+            data: entry,
+            success: function(result, status, xhr){
+              localStorage.clear();
+              window.location.href = "/thank_you";
+            },
+            error: function(err, status, xhr){
+              console.log(err);
+            }
           });
         }
-        window.location.href = "/";
       }
     });
 
@@ -138,7 +143,7 @@ function updateQuantity(data, name, qty) {
       if(item.name ==  name)
         item.quantity = qty;
     });
-    localStorage.setItem('entries', JSON.stringify(entries));
+    localStorage.setItem('entries', JSON.stringify(data));
 }
 
 function getIndexToRemove(data, name) {
@@ -158,33 +163,41 @@ function setCartItems() {
     $('#cart-items').text(entries.length);
 }
 
-function loadProducts(){
-
+function loadProducts(entries){
   if (entries) {
-
     for (var i = 0; i < entries.length; i++) {
+      lp(entries[i], entries[i].quantity);
+    }
+  }
+}
 
-      $.ajax({
-        url: "/products/" + entries[i].product_id,
-        type: "GET",
-        success: function(result, status, xhr, quantity){
-
-          $("#prods").append(`
+function lp(e, qty){
+  var selected_size;
+  $.ajax({
+    url: "/products/" + e.product_id,
+    type: "GET",
+    success: function(result, status, xhr){
+      if(e.selectedSize){
+        selected_size = e.selectedSize;
+      }
+      else {
+        selected_size = "not selected";
+      }
+      $('#prods').append(`
             <tr class="g-brd-bottom g-brd-gray-light-v3">
               <td class="text-left g-py-25">
                 <img class="d-inline-block g-width-100 mr-4" src="${result.url}" alt="${result.name}">
                 <div class="d-inline-block align-middle">
-                  <h4 class="name h6 g-color-black">${result.name}</h4>
-                  <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_6 mb-0">
-                    <li>Width: ${result.width}</li>
-                    <li>Size: Nose</li>
+                  <h4 class="name h6 g-color-black">${result.name.toUpperCase()}</h4>
+                  <ul id="product-info-${result.id}" class="list-unstyled g-color-gray-dark-v4 g-font-size-12 g-line-height-1_6 mb-0">
+                    <li>Size: ${selected_size}</li>
                   </ul>
                 </div>
               </td>
-              <td id="price" class="g-color-gray-dark-v2 g-font-size-13">$ ${result.price}</td>
+              <td id="price" class="g-color-gray-dark-v2 g-font-size-13">&euro; ${result.price}</td>
               <td id="qty">
                 <div id="div-input" class="js-quantity input-group u-quantity-v1 g-width-80 g-brd-primary--focus">
-                  <input id="input" class="js-result form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="1" readonly>
+                  <input id="input" class="js-result form-control text-center g-font-size-13 rounded-0 g-pa-0" type="text" value="${qty}" readonly>
 
                   <div class="input-group-addon d-flex align-items-center g-width-30 g-brd-gray-light-v2 g-bg-white g-font-size-12 rounded-0 g-px-5 g-py-6">
                     <i class="js-plus g-color-gray g-color-primary--hover fa fa-angle-up"></i>
@@ -193,25 +206,21 @@ function loadProducts(){
                 </div>
               </td>
               <td id="last-column" class="text-right g-color-black">
-                <span id="span" class="g-color-gray-dark-v2 g-font-size-13 mr-4">$ ${result.price}</span>
+                <span id="span" class="g-color-gray-dark-v2 g-font-size-13 mr-4">&euro; ${result.price}</span>
                 <span class="g-color-gray-dark-v4 g-color-black--hover g-cursor-pointer">
                   <i class="trash mt-auto fa fa-trash"></i>
                 </span>
               </td>
             </tr>
           `);
-        },
-        complete: function(){
-          updateTotal();
-          fillQuantity();
-        }
-      });
+    },
+    complete: function(){
+      updateTotal();
 
     }
-
-  }
-
+  });
 }
+
 
 function fillQuantity(){
   var i = 0;
@@ -244,11 +253,11 @@ function updateTotal(){
       price = parseFloat($(this).children('#price').text().substr(2));
       qty = parseInt($(this).children("#qty").children("#div-input").children("#input").val());
       total += price*qty;
-      $(this).children("#last-column").children("#span").text("$ " + price*qty + ".0")
+      $(this).children("#last-column").children("#span").html("&euro; " + price*qty + ".0")
     }
   });
 
-  $('.subtotal').text("$ "+total+".0");
-  $('.total').text("$ "+(Math.round(total*1.16 * 100) / 100));
+  $('.subtotal').html("&euro; "+total+".0");
+  $('.total').html("&euro; "+(Math.round(total*1.16 * 100) / 100));
 
 }

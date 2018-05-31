@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f070d20-7d04-4bbd-8f81-5ee1313ec869" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change beforePath="$PROJECT_DIR$/public/cart.html" afterPath="$PROJECT_DIR$/public/cart.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
+            <state relative-caret-position="819">
+              <caret line="318" column="4" lean-forward="false" selection-start-line="318" selection-start-column="4" selection-end-line="318" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -60,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -80,7 +80,7 @@
       <file leaf-file-name="thank_you.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/thank_you.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="-2519">
               <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
               <folding />
             </state>
@@ -160,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="905">
-              <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+            <state relative-caret-position="853">
+              <caret line="452" column="4" lean-forward="false" selection-start-line="452" selection-start-column="4" selection-end-line="452" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -186,9 +186,9 @@
       <find>color</find>
       <find>font-weight</find>
       <find>text-decoration</find>
+      <find>updateQuantity</find>
       <find>home-page-1</find>
       <find>home</find>
-      <find>updateQuantity</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -235,9 +235,9 @@
         <option value="$PROJECT_DIR$/public/thank_you.html" />
         <option value="$PROJECT_DIR$/public/js/single-product.js" />
         <option value="$PROJECT_DIR$/public/js/cart.js" />
-        <option value="$PROJECT_DIR$/public/cart.html" />
         <option value="$PROJECT_DIR$/public/css/custom-unify.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/cart.html" />
       </list>
     </option>
   </component>
@@ -486,18 +486,18 @@
       <workItem from="1527691563477" duration="7976000" />
       <workItem from="1527711915736" duration="1098000" />
       <workItem from="1527720711960" duration="3922000" />
-      <workItem from="1527776705953" duration="11359000" />
+      <workItem from="1527776705953" duration="11524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54755000" />
+    <option name="totallyTimeSpent" value="54920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-240" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13844515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13844515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -843,22 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="100" column="80" lean-forward="false" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/thank_you.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/discounts_socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -935,18 +919,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/custom-unify.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="88" lean-forward="false" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="318" column="4" lean-forward="false" selection-start-line="318" selection-start-column="4" selection-end-line="318" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/thank_you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2519">
+          <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -963,6 +955,14 @@
             <element signature="e#10111#10117#0" expanded="true" />
             <element signature="e#10928#10934#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="452" column="4" lean-forward="false" selection-start-line="452" selection-start-column="4" selection-end-line="452" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

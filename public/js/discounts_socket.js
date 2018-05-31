@@ -13,6 +13,7 @@ $(document).ready(function(){
       if(JSON.parse(event.data).message){
         var product = JSON.parse(event.data).message.product;
         if((product)&&(product.discount > 0)){
+          $('.discount-notification').remove();
           $('body').prepend(`
               <a class="discount-notification" href="/product?p=${product.id}">
                 <div class="bg-white-transparent alert fade show u-shadow-v1-3 g-pa-20 g-pos-fix g-top-100 g-right-30 g-width-380 g-z-index-9999" role="alert">

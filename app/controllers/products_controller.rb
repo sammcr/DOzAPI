@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :update, :destroy]
 
-  # GET /categories
+  # GET /categories/1/products
   def index
     @products = Product.all.paginate(page: params[:page], per_page: get_pagination)
     @products = Product.where('category_id = ?', category).paginate(page: params[:page], per_page: get_pagination).order("created_at DESC") if category
@@ -9,12 +9,12 @@ class ProductsController < ApplicationController
     render json: @products
   end
 
-  # GET /categories/1
+  # GET /products/2
   def show
     render json: @product, include: {category: {only: :name}}
   end
 
-  # POST /categories
+  # POST /products
   def create
     @product = Product.new(product_params)
 
@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /categories/1
+  # PATCH/PUT /products/1
   def update
     if @product.update(category_params)
       render json: @product
@@ -34,7 +34,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # DELETE /categories/1
+  # DELETE /products/1
   def destroy
     @product.destroy
   end
